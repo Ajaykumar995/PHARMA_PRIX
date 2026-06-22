@@ -1,0 +1,122 @@
+@import "@fontsource/poppins";
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* ===== RESET ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  color: #222;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* IMPORTANT */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ===== GLOBAL CONTAINER ===== */
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 60px;
+}
+
+/* ===== GLOBAL SECTION ===== */
+
+.section {
+  padding: 100px 0;
+}
+
+/* ===== GLOBAL TITLES ===== */
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title span {
+  color: #059142;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-title h2 {
+  font-size: 52px;
+  margin-top: 15px;
+  line-height: 1.2;
+}
+
+/* ===== TABLET ===== */
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+
+  .section-title h2 {
+    font-size: 40px;
+  }
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .section-title h2 {
+    font-size: 30px;
+  }
+}
+
+
+*{
+  font-family: "Poppins", sans-serif;
+}

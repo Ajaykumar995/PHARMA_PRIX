@@ -1,0 +1,47 @@
+@keyframes slideUpFade { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes popIn { 0% { transform: scale(0.9); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+.animate-slide-up { opacity: 0; animation: slideUpFade 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.animate-pop-in { animation: popIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+
+.categories-page { margin-left: 280px; padding: 40px; background: #f4f7f9; min-height: 100vh; font-family: 'Poppins', sans-serif; }
+
+.page-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+.page-header h1 { font-size: 32px; font-weight: 800; color: #0f172a; margin: 0 0 5px; }
+.page-header p { color: #64748b; margin: 0; font-size: 15px; }
+
+.add-category-btn { border: none; padding: 14px 28px; border-radius: 12px; cursor: pointer; font-weight: 700; font-size: 15px; color: white; background: linear-gradient(135deg, #008b8b, #00b4b4); box-shadow: 0 8px 20px rgba(0, 139, 139, 0.25); transition: 0.3s; }
+.add-category-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 25px rgba(0, 139, 139, 0.35); }
+
+.categories-admin-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 30px; }
+
+.admin-cat-card { background: white; border-radius: 16px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02); transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; }
+.admin-cat-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08); border-color: #cbd5e1; }
+
+.cat-card-image { background: linear-gradient(135deg, #f8fafc, #f1f5f9); height: 180px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #f1f5f9; padding: 20px; }
+.cat-card-image img { width: 100%; height: 100%; object-fit: contain; transition: transform 0.5s ease; }
+.admin-cat-card:hover .cat-card-image img { transform: scale(1.05); }
+
+.cat-card-content { padding: 25px; display: flex; flex-direction: column; flex: 1; }
+.cat-card-content h2 { margin: 0 0 10px; color: #0f172a; font-size: 20px; font-weight: 700; }
+.cat-card-content p { color: #64748b; font-size: 14px; line-height: 1.5; margin: 0 0 20px 0; flex: 1; }
+
+.action-buttons { display: flex; gap: 10px; margin-top: auto; }
+.edit-btn { flex: 1; border: 1px solid #e2e8f0; padding: 10px; border-radius: 8px; background: white; color: #2563eb; cursor: pointer; font-weight: 600; transition: 0.3s; }
+.edit-btn:hover { background: #eff6ff; border-color: #bfdbfe; }
+.delete-btn { flex: 1; border: 1px solid #fee2e2; padding: 10px; border-radius: 8px; background: #fef2f2; color: #ef4444; cursor: pointer; font-weight: 600; transition: 0.3s; }
+.delete-btn:hover { background: #ef4444; color: white; }
+
+.empty-state { grid-column: 1 / -1; text-align: center; padding: 60px; color: #64748b; background: white; border-radius: 16px; border: 1px dashed #cbd5e1; font-weight: 500; }
+
+.modal-overlay { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.6); display: flex; justify-content: center; align-items: center; backdrop-filter: blur(8px); z-index: 9999; }
+.delete-modal { width: 420px; background: white; border-radius: 24px; padding: 40px 35px; text-align: center; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); border: 1px solid rgba(255,255,255,0.2); }
+.modal-warning-icon { font-size: 50px; margin-bottom: 15px; background: #fef2f2; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin: 0 auto 20px; }
+.delete-modal h2 { color: #0f172a; margin-bottom: 10px; font-size: 24px; font-weight: 800; }
+.delete-modal p { color: #475569; line-height: 1.6; margin-bottom: 30px; font-size: 15px; } .delete-modal p strong { color: #0f172a; } .delete-modal p span { display: block; margin-top: 5px; font-size: 13px; color: #ef4444; }
+.modal-actions { display: flex; gap: 15px; }
+.cancel-btn { flex: 1; border: 1px solid #e2e8f0; padding: 14px; border-radius: 12px; cursor: pointer; background: white; color: #475569; font-weight: 700; transition: 0.2s; }
+.cancel-btn:hover { background: #f8fafc; color: #0f172a; }
+.confirm-delete-btn { flex: 1; border: none; padding: 14px; border-radius: 12px; cursor: pointer; background: #ef4444; color: white; font-weight: 700; transition: 0.2s; box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3); }
+.confirm-delete-btn:hover { background: #dc2626; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4); }
+
+@media(max-width: 900px) { .categories-page { margin-left: 0; padding: 20px; } }
