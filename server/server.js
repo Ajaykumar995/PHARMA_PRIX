@@ -59,7 +59,15 @@ const apiLimiter = rateLimit({
 // =============================
 // MIDDLEWARE
 // =============================
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://pharmaprixx.netlify.app/",
+    ],
+    credentials: true,
+  })
+);
 
 app.use(express.json());
 
