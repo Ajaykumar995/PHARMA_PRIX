@@ -63,7 +63,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://pharmaprixx.netlify.app/",
+      "https://pharmaprixx.netlify.app",
     ],
     credentials: true,
   })
