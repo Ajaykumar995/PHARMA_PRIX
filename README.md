@@ -4,6 +4,13 @@ A modern full-stack pharmacy management and e-commerce platform built using the 
 
 ---
 
+🌐 Live Application
+Frontend
+https://pharmaprixx.netlify.app
+
+Backend
+https://pharma-prix.onrender.com
+
 ## 🚀 Features
 
 ### Customer Website
