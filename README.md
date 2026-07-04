@@ -232,4 +232,4 @@ If you found this project useful, consider giving it a star on GitHub.
 
 ---
 
-**PHARMA-PRIX — Smart Healthcare, Simplified.**
+**PHARMA_PRIX — Smart Healthcare, Simplified.**
