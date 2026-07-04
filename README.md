@@ -1,4 +1,4 @@
-# 💊 PHARMA-PRIX
+# 💊 PHARMA_PRIX
 
 A modern full-stack pharmacy management and e-commerce platform built using the MERN Stack. PHARMA-PRIX helps medical stores manage products, categories, orders, branding, and customer interactions through a powerful admin dashboard and responsive customer-facing website.
 
@@ -116,7 +116,7 @@ PHARMA-PRIX
 ### Clone Repository
 
 ```bash
-git clone https://github.com/Ajaykumar995/PHARMA-PRIX.git
+git clone https://github.com/Ajaykumar995/PHARMA_PRIX.git
 ```
 
 ### Navigate to Project
